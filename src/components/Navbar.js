@@ -1,21 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <nav className="navbar sticky-top shadow-5-strong">
         <div className="container-fluid">
-          <a href="#root" className="navbar-brand links mb-0 h1">
+          <Link to="/" className="navbar-brand links mb-0 h1">
             Navbar
-          </a>
+          </Link>
         </div>
-        <a className="links" href="#gallary">
+        <NavLink to="/gallary" className="links">
           Gallary
-        </a>
-        <a className="links" href="#posts">
+        </NavLink>
+        <NavLink to="/posts" className="links">
           Posts
-        </a>
+        </NavLink>
       </nav>
     </>
   );
